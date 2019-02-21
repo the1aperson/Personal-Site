@@ -1,0 +1,110 @@
+﻿#message {
+    width: 300px;
+    height: 200px;
+}
+
+.jumbotron {
+    background-image: url('../Images/Image-2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+    .jumbotron .overlay {
+        background-color: #22A39F;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        opacity: 0.75;
+        filter: alpha(opacity=75);
+        z-index: 2;
+    }
+
+    .jumbotron .container {
+        position: relative;
+        top: 28%;
+        z-index: 4;
+        text-align: center;
+    }
+
+        .jumbotron .container h1 {
+            text-shadow: 10px 7px 15px #000;
+        }
+
+
+        .jumbotron .container p {
+            text-shadow: 10px 7px 15px #000;
+        }
+
+    .jumbotron p {
+        font-size: 40px;
+    }
+
+
+.form-horizontal .form-group {
+    margin-left: 14px;
+}
+
+.icon {
+    display: inline-block;
+    background: url(images/sm_icon_sprite.png) no-repeat;
+}
+
+    .icon.icon-linkedin {
+        background-position: 0px -32px;
+    }
+
+.nav li {
+    margin-bottom: -15px;
+}
+
+.navbar .nav li a {
+    padding-top: 13px;
+    padding-bottom: 24px;
+}
+
+.fa-linkedin-square{
+    float:right;
+}
+#bg-video {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+}
+.jumbovidtext {
+    z-index: 1;
+    position: absolute;
+}
+
+.jumbotron .container h1, .jumbotron .container p 
+{
+text-transform: uppercase;
+	margin-bottom: 0px;
+    animation-name: lsd;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes lsd
+{
+    0% {color: coral;}
+    33% {color: purple;}
+    66% {color: yellow;}
+    100% {color: cornflowerblue;}
+}
+
+a .logo
+{
+float:right;
+padding-bottom:8px;
+    
+}
+.jumbotron, .nav{
+    z-index:99;
+}

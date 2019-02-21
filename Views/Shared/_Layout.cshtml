@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title  | Developer</title>
+    <link href="~/Content/Styles/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Styles/bootswatchJournal.css" rel="stylesheet" />
+    <link href="~/Content/Styles/custom.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/Styles/imgGallery.css" rel="stylesheet" />
+    <link href="~/Content/Styles/quote.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    @*<div class="jumbotron" style="height:900px">
+        <div class="container">
+            <h1 style="color:indianred">Andrew Pearson</h1>
+            <hr />
+            <p class="lead" style="color:indianred">Full-Stack Developer</p>
+        </div>
+    </div>*@
+    <header>
+        <div>
+            @RenderSection("jumbotron", false)
+
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")<span class="sr-only">(current)</span></li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Resume", "Resume", "Home")
+                        <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                        <li>
+                            <a class="logo" href="https://www.linkedin.com/in/andrew-pearson-460148aa/" target="_blank" style="padding-bottom: 45px">
+                                <span class="fa fa-linkedin-square fa-2x" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    @RenderBody()
+
+
+    <div class="container body-content">
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Andrew Pearson</p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/Content/Scripts/bootstrap.js"></script>
+    <script src="~/Content/Scripts/imgGal.js"></script>
+</body>
+</html>

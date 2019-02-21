@@ -1,0 +1,17 @@
+﻿@model PersonalSiteMVC.Models.ContactViewModel
+@{
+    ViewBag.Title = "Contact Confirmation";
+}
+
+<h2>Contact Confirmation</h2>
+
+<div class="row">
+    <div class="col-sm-8">
+        @*Response Message Below*@
+        <h2>
+            Thank you for contacting us
+            @Model.Name! We will get back to you within 24 hours.
+        </h2>
+        <p>@Html.ActionLink("Back to Home", "Index", "Home")</p>
+</div>
+</div>
